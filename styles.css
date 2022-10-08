@@ -74,3 +74,13 @@ body.wrong {
     padding: 10px 20px;
 }
 
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
