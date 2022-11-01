@@ -13,7 +13,6 @@ nextButton.addEventListener(`click`, () => {
 });
 
 function startGame() {
-  console.log(`Started`);
   startButton.classList.add(`hide`);
   shuffledQuestions = questions.sort(() => Math.random() - 0.5);
   currentQuestionIndex = 0;
@@ -22,6 +21,7 @@ function startGame() {
 }
 
 function setNextQuestion() {
+  resetState();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
@@ -48,14 +48,15 @@ function resetState() {
 }
 
 function selectAnswer() {
-  const selectButton = e.target;
-  const correct = selectButton.datast.correct;
+  const selectButton = event.target;
+  const correct = selectButton.dataset.correct;
   setStatusClass(document.body, correct);
-  Array.front(answerButtonsElement.children).forEach((button) => {
+  Array.from(answerButtonsElement.children).forEach((button) => {
     setStatusClass(button, button.dataset.correct);
   });
+  nextButton.classList.remove(`hide`);
+
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
-    nextButton.classList.remove(`hide`);
   } else {
     startButton.innerText = `Restart`;
     startButton.classList.remove(`hide`);
@@ -82,6 +83,80 @@ const questions = [
     answers: [
       { text: `4`, correct: true },
       { text: `5`, correct: false },
+      { text: `5`, correct: false },
+      { text: `5`, correct: false },
+    ],
+  },
+  {
+    question: `What is 4 + 4?`,
+    answers: [
+      { text: `9`, correct: false },
+      { text: `8`, correct: true },
+      { text: `16`, correct: false },
+      { text: `6`, correct: false },
+    ],
+  },
+  {
+    question: `What is 4 * 4?`,
+    answers: [
+      { text: `9`, correct: false },
+      { text: `8`, correct: false },
+      { text: `16`, correct: true },
+      { text: `6`, correct: false },
+    ],
+  },
+  {
+    question: `What is 101 + 4?`,
+    answers: [
+      { text: `141`, correct: false },
+      { text: `104`, correct: false },
+      { text: `1695`, correct: false },
+      { text: `105`, correct: true },
+    ],
+  },
+  {
+    question: `What is 25 * 4?`,
+    answers: [
+      { text: `125`, correct: false },
+      { text: `75`, correct: false },
+      { text: `29`, correct: false },
+      { text: `100`, correct: true },
+    ],
+  },
+  {
+    question: `What is 125 + 24?`,
+    answers: [
+      { text: `150`, correct: false },
+      { text: `149`, correct: true },
+      { text: `169`, correct: false },
+      { text: `159`, correct: false },
+    ],
+  },
+  {
+    question: `What is 6 * 6?`,
+    answers: [
+      { text: `36`, correct: true },
+      { text: `46`, correct: false },
+      { text: `16`, correct: false },
+      { text: `12`, correct: false },
+    ],
+  },
+  {
+    question: `What is 7 * 8?`,
+    answers: [
+      { text: `15`, correct: false },
+      { text: `48`, correct: false },
+      { text: `16`, correct: false },
+      { text: `56`, correct: true },
+    ],
+  },
+  {
+    question: `What is 1567 + 433?`,
+    answers: [
+      { text: `1599`, correct: false },
+      { text: `2000`, correct: true },
+      { text: `2011`, correct: false },
+      { text: `6121`, correct: false },
     ],
   },
 ];
