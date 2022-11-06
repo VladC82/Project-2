@@ -87,19 +87,13 @@ body.wrong {
   display: none;
 }
 
-.howtoplay {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-}
-
 #box1 {
   top: 0;
   position: absolute;
   width: 250px;
-  height: 160px;
+  height: 100px;
   background: rgb(0, 183, 255);
-  font-size: 70px;
+  font-size: 50px;
   text-align: center;
   /*
   animation: mySlide;
@@ -125,10 +119,4 @@ body.wrong {
   to {
     margin-left: 0%;
   }
-}
-
-.btnHowToPlay {
-  position: fixed;
-  left: 50%;
-  top: 50%;
 }
