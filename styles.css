@@ -70,12 +70,6 @@ body.wrong {
   --hue: var(--hue-wrong);
 }
 
-.HowtoPlay {
-  font-size: 1;
-  font-weight: bold;
-  padding-top: 0%;
-}
-
 .start-btn,
 .next-btn {
   font-size: 1.5rem;
@@ -96,12 +90,44 @@ body.wrong {
 .button {
   background-color: #4caf50;
   border: none;
-  color: white;
+  color: black;
   padding: 15px 32px;
-  text-align: center;
+  text-align: center left;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+#box1 {
+  width: 250px;
+  height: 160px;
+  background: rgb(0, 183, 255);
+  font-size: 70px;
+  text-align: center;
+  /*
+  animation: mySlide;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  */
+  animation: 3s linear 0s infinite running mySlide;
+}
+
+@keyframes myScale {
+  50% {
+    transform: scale(0.5, 0.5);
+  }
+}
+
+@keyframes mySlide {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
