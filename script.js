@@ -6,7 +6,6 @@ const answerButtonsElement = document.getElementById(`answer-buttons`);
 
 let shuffledQuestions, currentQuestionIndex;
 
-infoButton.addEventListener(`click`, pressinfo);
 startButton.addEventListener(`click`, startGame);
 nextButton.addEventListener(`click`, () => {
   currentQuestionIndex++;

@@ -87,20 +87,15 @@ body.wrong {
   display: none;
 }
 
-.button {
-  background-color: #4caf50;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center left;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+.howtoplay {
+  position: fixed;
+  left: 50%;
+  top: 50%;
 }
 
 #box1 {
+  top: 0;
+  position: absolute;
   width: 250px;
   height: 160px;
   background: rgb(0, 183, 255);
@@ -109,12 +104,12 @@ body.wrong {
   /*
   animation: mySlide;
   animation-play-state: running;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-delay: 0s;
   animation-timing-function: linear;
   animation-duration: 5s;
   */
-  animation: 3s linear 0s infinite running mySlide;
+  animation: 3s linear 0s 1 running mySlide;
 }
 
 @keyframes myScale {
@@ -130,4 +125,10 @@ body.wrong {
   to {
     margin-left: 0%;
   }
+}
+
+.btnHowToPlay {
+  position: fixed;
+  left: 50%;
+  top: 50%;
 }

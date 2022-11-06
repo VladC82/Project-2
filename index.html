@@ -9,8 +9,17 @@
     <title>Project 2</title>
   </head>
   <body>
-    <h1>Quiz Time</h1>
-    <button>Info</button>
+    <div id="box1">Quiz Time</div>
+    <button onclick="HowToPlay()" style="border-radius: 5px">
+      How To Play
+    </button>
+    <p id="test"></p>
+    <script>
+      function HowToPlay() {
+        document.getElementById("test").innerHTML =
+          "Read the questions and give the right answers";
+      }
+    </script>
     <div class="container">
       <div id="question-container" class="hide">
         <div id="question">Question</div>
