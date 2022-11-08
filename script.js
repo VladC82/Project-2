@@ -88,7 +88,7 @@ const questions = [
     ],
   },
   {
-    question: `Wich one is the princess?`,
+    question: `Which one is the princess?`,
     answers: [
       { text: `Lilo`, correct: false },
       { text: `Snow White`, correct: true },
