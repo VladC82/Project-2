@@ -21,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: hsl(var(--hue), 100%, 20%);
+  flex-direction: column;
 }
 
 body.correct {
