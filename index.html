@@ -10,14 +10,14 @@
   </head>
   <body>
     <div id="box1" class="container">Quiz Time</div>
-    <button onclick="HowToPlay()" style="border-radius: 5px" class="btn">
+    <button onclick="HowToPlay()" style="border-radius: 100px" class="btn">
       How To Play
     </button>
     <p id="test"></p>
     <script>
       function HowToPlay() {
-        document.getElementById("test").innerHTML =
-          "Read the questions and give the right answers. Have fun";
+        document.getElementById("test") .innerHTML =
+          "Read the questions and give the right answers. Have fun !!!"; 
       }
     </script>
     <div class="container">
@@ -35,9 +35,10 @@
         <button id="next-btn" class="next-btn btn hide">Next</button>
       </div>
     </div>
-    <audio controls autoplay loop>
-      <source src="./epic_battle_music_1-6275.mp3" type="audio/mpeg" />
+    <div class="player">
+      <audio controls autoplay loop src="./music_box-17898.mp3" type="audio/mpeg" />
       Your browser does not support the HTML5 audio tag.
     </audio>
+    </div>   
   </body>
 </html>

@@ -6,7 +6,7 @@
 }
 
 :root {
-  --hue-neutral: 200;
+  --hue-neutral: 300;
   --hue-wrong: 0;
   --hue-correct: 145;
 }
@@ -35,7 +35,7 @@ body.wrong {
 .container {
   width: 800px;
   max-width: 80%;
-  background-color: rgb(200, 255, 0);
+  background-color: rgb(230, 219, 157);
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 0 10px 2px;
@@ -50,21 +50,21 @@ body.wrong {
 
 .btn {
   --hue: var(--hue-neutral);
-  border: 1px solid hsl(var(--hue), 100%, 30%);
+  border: 3px solid hsl(var(--hue), 100%, 30%);
   background-color: hsl(var(--hue), 100%, 50%);
-  border-radius: 5px;
+  border-radius: 100px;
   padding: 5px 10px;
-  color: black;
+  color: white;
   outline: none;
 }
 
 .btn:hover {
-  border-color: black;
+  border-color: white;
 }
 
 .btn.correct {
   --hue: var(--hue-correct);
-  color: black;
+  color: white;
 }
 
 .btn.wrong {
@@ -93,9 +93,10 @@ body.wrong {
   position: absolute;
   width: 250px;
   height: 100px;
-  background: rgb(214, 20, 221);
+  background: rgb(228, 217, 158);
   font-size: 50px;
   text-align: center;
+  color: blueviolet;
   /*
   animation: mySlide;
   animation-play-state: running;
@@ -122,11 +123,35 @@ body.wrong {
   }
 }
 
-.audio {
-  bottom: 0;
-  position: absolute;
-  width: 250px;
-  height: 100px;
-  font-size: 50px;
-  text-align: center;
+.test {
+  color: 238, 228, 171;
+}
+
+.player {
+  position: center;
+  width: 200px;
+  background-color: none;
+  border-radius: 1px;
+  box-shadow: none;
+}
+.player audio {
+  width: 100%;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 145px;
+  height: 45px;
+  background: blueviolet;
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 0 8px;
+}
+
+.timer .time_text {
+  font-weight: 400;
+  font-size: 17px;
+  user-select: none;
 }
