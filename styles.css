@@ -121,3 +121,12 @@ body.wrong {
     margin-left: 0%;
   }
 }
+
+.audio {
+  bottom: 0;
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  font-size: 50px;
+  text-align: center;
+}

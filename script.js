@@ -79,16 +79,16 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: `What is 2 + 2?`,
+    question: `What is 22 + 2?`,
     answers: [
-      { text: `4`, correct: true },
-      { text: `5`, correct: false },
-      { text: `6`, correct: false },
-      { text: `3`, correct: false },
+      { text: `24`, correct: true },
+      { text: `25`, correct: false },
+      { text: `26`, correct: false },
+      { text: `23`, correct: false },
     ],
   },
   {
-    question: `Which one is the princess?`,
+    question: `Which one is a princess?`,
     answers: [
       { text: `Lilo`, correct: false },
       { text: `Snow White`, correct: true },
@@ -97,7 +97,7 @@ const questions = [
     ],
   },
   {
-    question: `How ninja turtles are?`,
+    question: `How many ninja turtles are?`,
     answers: [
       { text: `6`, correct: false },
       { text: `5`, correct: false },
@@ -106,7 +106,7 @@ const questions = [
     ],
   },
   {
-    question: `Who was the best friend of Scooby-Doo?`,
+    question: `Who is the best friend of Scooby-Doo?`,
     answers: [
       { text: `Velma`, correct: false },
       { text: `Daphne`, correct: false },
@@ -115,7 +115,7 @@ const questions = [
     ],
   },
   {
-    question: `What was the name of the snowman from Frozen?`,
+    question: `What is the name of the snowman from Frozen?`,
     answers: [
       { text: `Hans`, correct: false },
       { text: `Kristoff`, correct: false },
