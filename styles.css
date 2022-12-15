@@ -137,21 +137,3 @@ body.wrong {
 .player audio {
   width: 100%;
 }
-
-.timer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 145px;
-  height: 45px;
-  background: blueviolet;
-  border: 3px solid black;
-  border-radius: 5px;
-  padding: 0 8px;
-}
-
-.timer .time_text {
-  font-weight: 400;
-  font-size: 17px;
-  user-select: none;
-}
